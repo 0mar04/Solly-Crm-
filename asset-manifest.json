@@ -1,0 +1,53 @@
+{
+  "hero": [
+    "/assets/hero/hero-composition-crystal-devices.png"
+  ],
+  "mockups": [
+    "/assets/mockups/laptop-mockup-dark-ui.png",
+    "/assets/mockups/phone-mockup-property-app.png",
+    "/assets/mockups/dashboard-devices-mockup.png"
+  ],
+  "decor": [
+    "/assets/decor/crystal-shard-tall.png",
+    "/assets/decor/crystal-shard-cluster.png",
+    "/assets/decor/bonsai-rock-island.png",
+    "/assets/decor/angular-building-cutout.png"
+  ],
+  "backgrounds": [
+    "/assets/backgrounds/soft-sage-blob.png",
+    "/assets/backgrounds/section-wave-light.svg",
+    "/assets/backgrounds/section-orbit-light.svg",
+    "/assets/backgrounds/grid-dots-light.svg",
+    "/assets/backgrounds/line-curves-light.svg"
+  ],
+  "brand": [
+    "/assets/brand/ninja-mark.svg",
+    "/assets/brand/ninja-wordmark.svg"
+  ],
+  "services_icons": [
+    "/assets/icons/services/ecommerce.svg",
+    "/assets/icons/services/integrations.svg",
+    "/assets/icons/services/mobile.svg",
+    "/assets/icons/services/support.svg",
+    "/assets/icons/services/systems.svg",
+    "/assets/icons/services/web.svg"
+  ],
+  "process_icons": [
+    "/assets/icons/process/build.svg",
+    "/assets/icons/process/design.svg",
+    "/assets/icons/process/discover.svg",
+    "/assets/icons/process/launch.svg",
+    "/assets/icons/process/support.svg"
+  ],
+  "ui": [
+    "/assets/ui/arrow-up-right.svg",
+    "/assets/ui/check.svg",
+    "/assets/ui/chevron-left.svg",
+    "/assets/ui/globe.svg",
+    "/assets/ui/line-separator.svg",
+    "/assets/ui/mail.svg",
+    "/assets/ui/phone.svg",
+    "/assets/ui/play-button.svg",
+    "/assets/ui/whatsapp.svg"
+  ]
+}

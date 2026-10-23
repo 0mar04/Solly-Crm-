@@ -1,0 +1,14 @@
+:root {
+  --ninja-bg: #fbfbf8;
+  --ninja-surface: #f5f6ef;
+  --ninja-surface-2: #eef0e6;
+  --ninja-text: #111111;
+  --ninja-muted: #6f736a;
+  --ninja-border: #e4e7dc;
+  --ninja-accent: #e7f06b;
+  --ninja-accent-strong: #d7e44f;
+  --radius-sm: 14px;
+  --radius-md: 22px;
+  --radius-lg: 32px;
+  --shadow-soft: 0 16px 40px rgba(17, 17, 17, 0.08);
+}

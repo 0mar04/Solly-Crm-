@@ -1,0 +1,13 @@
+{
+  "metadata": {
+    "title": "NINJA Software House",
+    "description": "NINJA Software House — modern digital solutions for businesses."
+  },
+  "foundation": {
+    "badge": "Technical foundation",
+    "title": "Frontend architecture is ready",
+    "description": "The project is prepared for the approved design without beginning the full homepage implementation.",
+    "status": "Verified",
+    "nextStep": "Next: implement the approved homepage sections."
+  }
+}
