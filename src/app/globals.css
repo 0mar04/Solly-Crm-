@@ -132,3 +132,23 @@ html[lang="ar"] {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+@layer components {
+  .section-kicker {
+    @apply mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground;
+  }
+
+  .section-title {
+    @apply max-w-[14ch] text-balance text-4xl font-semibold leading-[1.02] tracking-[-0.05em] sm:text-5xl lg:text-6xl;
+  }
+
+  .section-copy {
+    @apply mt-5 max-w-2xl text-sm leading-7 text-muted-foreground sm:text-base;
+  }
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--foreground);
+}
