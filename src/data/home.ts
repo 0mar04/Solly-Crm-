@@ -1,4 +1,4 @@
-import type { Locale } from "@/i1360°n/config";
+import type { Locale } from "@/i18n/config";
 
 export type HomeCopy = {
   nav: {
@@ -92,12 +92,12 @@ const ar: HomeCopy = {
     highlight: "في مكان واحد.",
     description:
       "من أول استفسار العميل لحد متابعة الصفقة: نظّم العملاء المحتملين والوحدات العقارية وفريق المبيعات في منصة CRM واحدة مصممة للمطورين والوسطاء العقاريين.",
-    primary: "ابدأ مشروعك",
+    primary: "اطلب عرضًا توضيحي",
     secondary: "استكشف المميزات",
   },
   stats: [
     { value: "CRM", label: "إدارة العملاء المحتملين" },
-    { value: "8", label: "نظرة موحدة على المبيعات" },
+    { value: "360°", label: "نظرة موحدة على المبيعات" },
     { value: "One", label: "منصة لفريقك" },
   ],
   work: {
@@ -123,7 +123,7 @@ const ar: HomeCopy = {
       },
       {
         title: "متابعة فريق المبيعات",
-        category: "Team Platformspace",
+        category: "Team Workspace",
         description: "وزّع العملاء والمهام وراجع نشاط فريقك من لوحة تحكم واحدة.",
         image: "/assets/mockups/phone-mockup-property-app.png",
         tone: "dark",
@@ -192,7 +192,7 @@ const ar: HomeCopy = {
 
 const en: HomeCopy = {
   nav: {
-    work: "Work",
+    work: "Platform",
     services: "Features",
     process: "How it works",
     industries: "Who it's for",
@@ -201,18 +201,18 @@ const en: HomeCopy = {
     menu: "Menu",
   },
   hero: {
-    eyebrow: "Software House · Cairo, Egypt",
+    eyebrow: "Real Estate CRM · Built for property teams",
     title: "Your real estate business,",
     highlight: "all in one CRM.",
     description:
       "From the first property inquiry to the next sales follow-up, organize leads, listings and your team in one CRM built for developers, brokers and real estate sales companies.",
-    primary: "Start a project",
+    primary: "Request a demo",
     secondary: "Explore features",
   },
   stats: [
-    { value: "16+", label: "Lead management" },
-    { value: "8", label: "Connected sales view" },
-    { value: "4", label: "Workspace for your team" },
+    { value: "CRM", label: "Lead management" },
+    { value: "360°", label: "Connected sales view" },
+    { value: "One", label: "Workspace for your team" },
   ],
   work: {
     eyebrow: "Platform overview",
@@ -222,22 +222,22 @@ const en: HomeCopy = {
     viewAll: "Request a live demo",
     items: [
       {
-        title: "AmTalek",
-        category: "Real Estate Platform",
+        title: "Lead Management",
+        category: "Leads & Pipeline",
         description: "Keep track of inquiries, assign owners and follow each opportunity through your pipeline.",
         image: "/assets/mockups/dashboard-devices-mockup.png",
         tone: "sage",
       },
       {
-        title: "iTashteeb",
-        category: "Marketplace",
+        title: "Properties & Projects",
+        category: "Inventory Management",
         description: "Organize projects, listings, prices and availability for your sales team.",
-        image: "/assets/mockups/laptop-mockup-dark-ui.png",
+        image: "/assets/mockups/dashboard-devices-mockup.png",
         tone: "light",
       },
       {
-        title: "Mobile Products",
-        category: "iOS & Android",
+        title: "Sales Team Workspace",
+        category: "Team Management",
         description: "Assign leads and tasks, and keep your team aligned on the next action.",
         image: "/assets/mockups/phone-mockup-property-app.png",
         tone: "dark",
@@ -283,23 +283,23 @@ const en: HomeCopy = {
     ],
   },
   industries: {
-    eyebrow: "Industries",
+    eyebrow: "Who it’s for",
     title: "Made for real estate companies.",
     description: "For property developers, brokers and real estate marketers who need a clearer way to work.",
     items: ["Developers", "Brokerages", "Property Marketing", "Sales Teams", "Project Teams", "Inventory Managers", "Lead Managers", "Company Owners"],
   },
   contact: {
-    eyebrow: "Start a project",
+    eyebrow: "Request a demo",
     title: "See your real estate CRM in action.",
     description: "Share your details to arrange a demonstration of how Solly CRM can support your team.",
     name: "Name",
     phone: "Phone or WhatsApp",
     project: "Company name and team needs",
     submit: "Request a demo",
-    note: "Your number is enough. We’ll contact you and understand the details together.",
+    note: "A demo request does not commit you to a subscription.",
   },
   footer: {
-    line: "Software built around your business.",
+    line: "Real estate relationships. One organized workspace.",
     rights: "All rights reserved.",
   },
 };
