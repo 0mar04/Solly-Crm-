@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
@@ -29,8 +28,8 @@ export function SiteHeader({ locale, copy }: SiteHeaderProps) {
     <header className="absolute inset-x-0 top-0 z-50">
       <div className="site-container">
         <div className="flex h-[84px] items-center justify-between gap-4 border-b border-black/[0.06]">
-          <Link href={`/${locale}`} className="relative h-8 w-[104px] shrink-0" aria-label="NINJA home">
-            <Image src="/assets/brand/ninja-wordmark.svg" alt="NINJA" fill priority className="object-contain object-start" />
+          <Link href={`/${locale}`} className="flex h-8 w-[140px] shrink-0 items-center" aria-label="Solly CRM home">
+            <span className="text-2xl font-black tracking-tight text-[#153f35]">Solly<span className="font-medium text-[#1f886e]">CRM</span></span>
           </Link>
 
           <nav className="hidden items-center gap-8 text-sm font-medium text-black/65 lg:flex">

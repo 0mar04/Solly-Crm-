@@ -33,7 +33,7 @@ export function IndustriesSection({ copy }: IndustriesSectionProps) {
           </div>
         </div>
 
-        <div className="relative mt-14 overflow-hidden rounded-[2.3rem] border border-border/70 bg-[#eef1e7]">
+        <div className="relative mt-14 overflow-hidden rounded-[2.3rem] border border-border/70 bg-[#e8f3ef]">
           <Image
             src="/assets/backgrounds/section-orbit-light.svg"
             alt=""
@@ -44,10 +44,10 @@ export function IndustriesSection({ copy }: IndustriesSectionProps) {
           <div className="grid min-h-[420px] items-center gap-8 p-6 sm:p-8 lg:grid-cols-[0.85fr_1.15fr] lg:p-10">
             <div className="relative z-10 max-w-lg">
               <span className="inline-flex rounded-full border border-border bg-white/70 px-3 py-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground backdrop-blur">
-                Built around the business
+                Built for property businesses
               </span>
               <p className="mt-6 text-3xl font-semibold leading-[1.05] tracking-[-0.045em] sm:text-4xl">
-                Different industries. Same obsession with useful software.
+                One platform for developers, brokers and property sales teams.
               </p>
             </div>
 
