@@ -16,7 +16,7 @@ export function HeroSection({ locale, hero, stats }: HeroSectionProps) {
 
   return (
     <section className="relative isolate overflow-hidden pb-10 pt-28 sm:pt-32 lg:min-h-[96svh] lg:pb-16 lg:pt-36">
-      <div className="pointer-events-none absolute inset-0 -z-30 bg-[linear-gradient(180deg,#fbfbf8_0%,#fbfbf8_70%,#f4f6ee_100%)]" />
+      <div className="pointer-events-none absolute inset-0 -z-30 bg-[linear-gradient(135deg,#f7faf8_0%,#eff7f5_65%,#e1f0ea_100%)]" />
       <Image
         src="/assets/backgrounds/section-orbit-light.svg"
         alt=""
@@ -41,7 +41,7 @@ export function HeroSection({ locale, hero, stats }: HeroSectionProps) {
       />
 
       <div className="site-container">
-        <div className="grid min-h-[68svh] items-center gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-4">
+        <div className="grid min-h-[68svh] items-center gap-8 lg:grid-cols-[1fr_1fr] lg:gap-4">
           <div className="relative z-10 max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-white/80 px-3.5 py-2 shadow-[0_8px_24px_rgba(17,17,17,0.04)] backdrop-blur">
               <span className="size-2 rounded-full bg-accent-strong" />
@@ -50,7 +50,7 @@ export function HeroSection({ locale, hero, stats }: HeroSectionProps) {
               </p>
             </div>
 
-            <h1 className="mt-6 max-w-[11.5ch] text-balance text-[clamp(3.1rem,7vw,7.3rem)] font-semibold leading-[0.93] tracking-[-0.07em]">
+            <h1 className="mt-6 max-w-[11.5ch] text-balance text-[clamp(2.8rem,5.5vw,5.8rem)] font-semibold leading-[0.93] tracking-[-0.07em]">
               {hero.title}{" "}
               <span className="relative inline">
                 <span className="relative z-10">{hero.highlight}</span>
@@ -71,7 +71,7 @@ export function HeroSection({ locale, hero, stats }: HeroSectionProps) {
                 <Arrow className="transition-transform group-hover:-translate-y-0.5" />
               </Link>
               <Link
-                href="#projects"
+                href="#services"
                 className="inline-flex items-center rounded-full border border-border bg-white/80 px-6 py-3.5 text-sm font-semibold backdrop-blur transition-colors hover:bg-white"
               >
                 {hero.secondary}
@@ -82,14 +82,14 @@ export function HeroSection({ locale, hero, stats }: HeroSectionProps) {
           <div className="relative min-h-[390px] sm:min-h-[520px] lg:min-h-[650px]">
             <div className="absolute inset-[8%_2%_6%_8%] rounded-[4rem] bg-[radial-gradient(circle_at_center,rgba(231,240,107,0.22),rgba(238,240,230,0.45)_38%,transparent_72%)] blur-2xl" />
             <div className="absolute start-[4%] top-[13%] z-10 rounded-full border border-white/70 bg-white/70 px-3 py-2 text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground shadow-sm backdrop-blur">
-              Strategy → Design → Build
+              Leads → Properties → Sales
             </div>
             <div className="absolute bottom-[12%] end-[2%] z-10 hidden rounded-[1.25rem] border border-white/80 bg-white/72 p-4 shadow-[0_18px_45px_rgba(17,17,17,0.08)] backdrop-blur sm:block">
               <div className="text-2xl font-semibold tracking-[-0.04em]">01</div>
-              <div className="mt-1 text-xs text-muted-foreground">One team, end to end.</div>
+              <div className="mt-1 text-xs text-muted-foreground">One CRM for your real estate team.</div>
             </div>
             <Image
-              src="/assets/hero/hero-composition-crystal-devices.png"
+              src="/assets/mockups/dashboard-devices-mockup.png"
               alt=""
               fill
               priority
