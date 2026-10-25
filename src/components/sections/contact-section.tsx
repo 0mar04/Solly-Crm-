@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FiArrowUpLeft, FiArrowUpRight, FiMessageCircle } from "react-icons/fi";
 
 import type { HomeCopy } from "@/data/home";
 
@@ -8,35 +9,71 @@ type ContactSectionProps = {
 
 export function ContactSection({ copy }: ContactSectionProps) {
   return (
-    <section id="contact" className="pb-8 pt-12 scroll-mt-24 sm:pt-20">
+    <section id="contact" className="relative scroll-mt-24 pb-10 pt-14 sm:pt-20 lg:pt-24">
       <div className="site-container">
-        <div className="relative overflow-hidden rounded-[2.2rem] bg-[#e9eddc] px-5 py-8 sm:px-8 sm:py-12 lg:px-12 lg:py-14">
-          <div className="absolute inset-y-0 end-0 hidden w-[38%] lg:block">
-            <Image src="/assets/decor/bonsai-rock-island.png" alt="" fill className="object-contain object-end-bottom opacity-95" />
-          </div>
-          <div className="relative z-10 grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-            <div className="max-w-xl">
-              <p className="section-kicker">{copy.eyebrow}</p>
-              <h2 className="section-title">{copy.title}</h2>
-              <p className="section-copy">{copy.description}</p>
+        <div className="relative isolate overflow-hidden rounded-[2.5rem] border border-black/5 bg-[#e9eddc] shadow-[0_24px_70px_rgba(17,17,17,0.07)]">
+          <Image
+            src="/assets/backgrounds/grid-dots-light.svg"
+            alt=""
+            width={400}
+            height={400}
+            className="pointer-events-none absolute start-0 top-0 -z-10 w-80 opacity-30"
+          />
+          <Image
+            src="/assets/backgrounds/soft-sage-blob.png"
+            alt=""
+            width={620}
+            height={620}
+            className="pointer-events-none absolute -bottom-48 -end-32 -z-10 w-[34rem] opacity-50"
+          />
+
+          <div className="grid gap-10 px-5 py-8 sm:px-8 sm:py-12 lg:grid-cols-[0.82fr_1.18fr] lg:px-12 lg:py-14 xl:px-14">
+            <div className="relative z-10 flex min-h-[420px] flex-col justify-between">
+              <div className="max-w-xl">
+                <div className="inline-flex size-11 items-center justify-center rounded-full bg-foreground text-background">
+                  <FiMessageCircle />
+                </div>
+                <p className="section-kicker mt-6">{copy.eyebrow}</p>
+                <h2 className="section-title">{copy.title}</h2>
+                <p className="section-copy">{copy.description}</p>
+              </div>
+
+              <div className="relative mt-8 hidden min-h-[180px] lg:block">
+                <Image
+                  src="/assets/decor/bonsai-rock-island.png"
+                  alt=""
+                  fill
+                  className="object-contain object-start"
+                />
+              </div>
             </div>
 
-            <form className="grid max-w-2xl gap-3 rounded-[1.6rem] border border-white/70 bg-white/82 p-4 shadow-[0_18px_50px_rgba(17,17,17,0.05)] backdrop-blur sm:p-5">
-              <label className="grid gap-2 text-xs font-semibold text-muted-foreground">
-                {copy.name}
-                <input className="h-12 rounded-xl border border-border bg-white px-4 text-sm text-foreground outline-none transition focus:border-foreground/30 focus:ring-2 focus:ring-ring/20" />
-              </label>
-              <label className="grid gap-2 text-xs font-semibold text-muted-foreground">
-                {copy.phone}
-                <input inputMode="tel" className="h-12 rounded-xl border border-border bg-white px-4 text-sm text-foreground outline-none transition focus:border-foreground/30 focus:ring-2 focus:ring-ring/20" />
-              </label>
+            <form className="relative z-10 grid gap-4 rounded-[1.8rem] border border-white/80 bg-white/88 p-4 shadow-[0_20px_55px_rgba(17,17,17,0.06)] backdrop-blur sm:p-6">
+              <div className="grid gap-4 sm:grid-cols-2">
+                <label className="grid gap-2 text-xs font-semibold text-muted-foreground">
+                  {copy.name}
+                  <input className="h-13 rounded-[0.9rem] border border-border bg-white px-4 text-sm text-foreground outline-none transition focus:border-foreground/25 focus:ring-2 focus:ring-ring/15" />
+                </label>
+                <label className="grid gap-2 text-xs font-semibold text-muted-foreground">
+                  {copy.phone}
+                  <input inputMode="tel" className="h-13 rounded-[0.9rem] border border-border bg-white px-4 text-sm text-foreground outline-none transition focus:border-foreground/25 focus:ring-2 focus:ring-ring/15" />
+                </label>
+              </div>
+
               <label className="grid gap-2 text-xs font-semibold text-muted-foreground">
                 {copy.project}
-                <textarea rows={4} className="resize-none rounded-xl border border-border bg-white px-4 py-3 text-sm text-foreground outline-none transition focus:border-foreground/30 focus:ring-2 focus:ring-ring/20" />
+                <textarea rows={6} className="resize-none rounded-[1rem] border border-border bg-white px-4 py-3.5 text-sm text-foreground outline-none transition focus:border-foreground/25 focus:ring-2 focus:ring-ring/15" />
               </label>
-              <button type="submit" className="mt-1 h-12 rounded-xl bg-foreground px-5 text-sm font-semibold text-background transition-transform hover:-translate-y-0.5">
+
+              <button
+                type="submit"
+                className="group mt-1 inline-flex h-13 items-center justify-center gap-2 rounded-[0.95rem] bg-foreground px-5 text-sm font-semibold text-background shadow-[0_12px_30px_rgba(17,17,17,0.14)] transition-all hover:-translate-y-0.5"
+              >
                 {copy.submit}
+                <FiArrowUpRight className="ltr:block rtl:hidden" />
+                <FiArrowUpLeft className="hidden rtl:block" />
               </button>
+
               <p className="text-xs leading-5 text-muted-foreground">{copy.note}</p>
             </form>
           </div>
